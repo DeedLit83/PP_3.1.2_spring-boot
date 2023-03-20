@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>User</title>
+</head>
+<body>
+<p>Selected User:</p>
+<table border="1">
+  <tr>
+    <td>Id</td>
+    <td th:text="${user.getId()}">Id</td>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td th:text="${user.getName()}">Name</td>
+  </tr>
+  <tr>
+    <td>Surname</td>
+    <td th:text="${user.getSurName()}">Surname</td>
+  </tr>
+  <td>Age</td>
+    <td th:text="${user.getAge()}">Age</td>
+  </tr>
+  <tr>
+    <td>E-mail</td>
+    <td th:text="${user.getEmail()}">Email</td>
+  </tr>
+</table>
+<br>
+<form action="/">
+  <button>Users</button>
+</form>
+</body>
+</html>
